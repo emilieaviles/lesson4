@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>New York</title>
+
+	<style type="text/css">
+
+	* {
+
+		box-sizing: border-box;
+
+		}
+
+	body, html {
+
+		margin: 0;
+		padding: 0;
+	
+				}
+
+	body {
+
+		background: black;
+		
+		}
+
+	.container {
+
+		background: black;
+		height: 620px;
+		width: 833px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: 1fr 1fr 300px;
+		grid-template-rows: 200px 1fr 1fr;
+		grid-template-areas:
+			"p1 p1 p2"
+			"p3 p3 p2"
+			"p4 p5 p2";
+		grid-gap: 5px;
+		padding: 5px;
+
+				}
+
+	.container:hover { 
+
+		background: linear-gradient(360deg, #0fa079, #0fa0a0, #0f80a0, #0f66a0);
+
+					}
+
+	.item {
+
+		background: magenta;
+		min-height: 100px;
+		min-width: 100px;
+
+			}
+
+	#p1 {
+
+		grid-area: p1;
+		background: url(5.jpg);
+		background-size: cover;
+		background-position: center;
+
+		}
+
+	#p2 {
+
+		grid-area: p2;
+		background: url(https://66.media.tumblr.com/535e40dff55792b24aff61bd86843287/tumblr_ouxpe01Zs71uusr3eo1_500.jpg);
+		background-size: cover;
+		background-position: center;
+
+		}
+
+	#p3 {
+
+		grid-area: p3;
+		background: url(2.jpg);
+		background-size: cover;
+		background-position: center;
+
+		}
+
+	#p4 {
+
+		grid-area: p4;
+		background: url(http://static.tumblr.com/be36d565aca39e30c448a7bf048e4b74/guz3rqw/0drn2901b/tumblr_static_tumblr_msimraga531snecmbo5_1280.jpg);
+		background-size: cover;
+		background-position: center;
+
+		}
+
+	#p5 {
+
+		grid-area: p5;
+		background: url(https://i.pinimg.com/originals/14/3b/20/143b206ed9fbeaf79fb962de61d7d4fc.jpg);
+		background-size: cover;
+		background-position: center;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="item" id="p1">
+		</div>
+		
+		<div class="item" id="p2">
+		</div>
+
+		<div class="item" id="p3">
+		</div>
+
+		<div class="item" id="p4">
+		</div>
+
+		<div class="item" id="p5">
+		</div>
+	</div>
+
+</body>
+</html>
